@@ -1,0 +1,581 @@
+/*
+==================
+GLOBAL STYLES
+==================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1em;
+}
+/*
+================
+Hero Section
+================
+*/
+
+.hero {
+  background: darkblue;
+  height: 40vh;
+  display: flex;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Mansalva', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Sacramento', cursive;
+*/
+/*--------------------------------------------------------------------------------*/
+
+.menu {
+  widows: 100%;
+  background-color: rgb(243, 242, 242);
+  height: 40px;
+}
+
+.menu ul {
+  text-align: center;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 40px;
+  color: rgb(12, 11, 11);
+  font-weight: bold;
+  padding: 0px 15px 0px 15px;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+services Section
+================
+*/
+
+.SN {
+  display: flex;
+}
+
+.services {
+  width: 100%;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.col-wrapper {
+  width: 100%;
+  padding-top: 50px;
+  flex-direction: row;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.services-col {
+  width: 33.33%;
+  justify-content: space-between;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: #3a589b;
+  border-width: 2px;
+  border-radius: 10%;
+  border-style: outset;
+  margin: 5px;
+}
+
+.services-col img {
+  width: 120px;
+  max-width: 120px;
+}
+
+.col-wrapper::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+Sign Up section
+================
+*/
+
+.SignUpcss {
+  text-align: center;
+  width: 30%;
+  background-color: rgba(225, 226, 221, 0.808);
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.applybtn {
+  padding: 7px 15px 7px 15px;
+  width: auto;
+  background-color: rgb(255, 255, 251);
+  color: #0f0b0b;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+About_us Section
+================
+*/
+
+.aboutus {
+  justify-content: center;
+
+  align-items: center;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  /*  background-image: url(images/companyPic.jpeg);*/
+  background: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: darkblue;
+}
+
+.aboutus-content {
+  widows: 90px;
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.5em;
+}
+
+.btn {
+  background: rgba(0, 0, 0, 0.01);
+  padding: 10px 15px 10px 15px;
+  margin-top: 30px;
+  border: blanchedalmond;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+Team Section
+================
+*/
+
+.team {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  text-align: center;
+}
+
+.team-wrapper {
+  width: 90%;
+  padding-top: 50px;
+  margin: auto;
+}
+
+.col-team {
+  width: 33.33%;
+  float: left;
+  padding: 10px 30px 10px 30px;
+}
+
+.col-team img {
+  width: 80px;
+  height: 100px;
+  max-width: 100%;
+}
+/*
+.img1 {
+    height: 100px;
+    margin-top: 3%;
+}
+
+.h33{
+    margin-top: 7%;
+}
+*/
+.tcol {
+  max-width: 200%;
+  max-height: 170%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.05);
+}
+
+.team-wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+contact Section
+================
+*/
+
+.contact {
+  width: 100%;
+  background-color: rgb(243, 242, 248);
+}
+
+.cta {
+  background-color: rgb(230, 224, 105);
+  width: 100%;
+  padding: 15px 5px 15px 5px;
+  text-align: center;
+}
+
+.cta-col {
+  width: 33.33%;
+  float: left;
+}
+
+.cta-col h3 {
+  display: inline;
+}
+
+.cta::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+contact mian
+================
+*/
+
+.contactinfo {
+  width: 100%;
+  padding: 30px 5px 30px 5px;
+  text-align: center;
+  background-color: rgba(225, 226, 221, 0.808);
+}
+
+.contactinfo::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contactinfo-col1 {
+  width: 35%;
+  float: left;
+}
+
+.contactinfo-col2 {
+  width: 65%;
+  float: left;
+  padding-right: 10%;
+}
+
+.social-icons {
+  padding: 15px;
+  border: 1px dotted rgb(255, 245, 245);
+  margin-top: 30px;
+}
+
+.fb {
+  background: #3a589b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.in {
+  background: #d6492f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tw {
+  background: #32ccfe;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ln {
+  background: #007bb6;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gp {
+  background: blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+form styles
+================
+*/
+
+.form-col {
+  padding-top: 10px;
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+  text-align: left;
+}
+
+.fname,
+.femail {
+  width: 100%;
+  height: 35px;
+  padding: 0px 5px 0px 5px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
+.msg {
+  width: 100%;
+  height: 200px;
+  border: none;
+  outline: none;
+}
+
+.lable {
+  text-align: left;
+  float: left;
+}
+
+.sendbtn {
+  background-color: rgb(34, 59, 51);
+  border: none;
+  color: #fff;
+  outline: 1px solid rgb(153, 52, 52);
+  padding: 10px 30px 10px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: left;
+  float: left;
+}
+
+.colh2 {
+  text-align: left;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+footer styles
+================
+*/
+
+.footer {
+  background-color: #1b181f;
+  color: #eee;
+  width: 100%;
+  padding: 30px 10px 30px 10px;
+}
+
+.footer::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.footer h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col {
+  width: 33.33%;
+  float: left;
+  padding: 5px;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*
+================
+CSS Media
+================
+*/
+
+@media screen and (max-width: 500px) {
+  .services-col {
+    width: 100%;
+    padding-top: 75px;
+  }
+
+  /*------------------------------------------------------------------------------*/
+
+  .hero h1 {
+    font-size: 2.7em;
+  }
+
+  .hero h3 {
+    font-size: 1.7em;
+  }
+
+  .hero h4 {
+    font-size: 1em;
+  }
+
+  /*------------------------------------------------------------------------------*/
+
+  .col-team {
+    width: 100%;
+    padding-top: 75px;
+  }
+
+  /*------------------------------------------------------------------------------*/
+
+  .cta-col {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .contactinfo-col1 {
+    width: 100%;
+  }
+
+  .contactinfo-col2 {
+    width: 100%;
+    padding: 30px 5px 30px 5px;
+  }
+
+  .form-col {
+    width: 100%;
+  }
+
+  /*------------------------------------------------------------------------------*/
+
+  .footer-col {
+    width: 100%;
+    padding: 20px 5px 20px 5px;
+  }
+}
+
+.logo {
+  background: none;
+}
